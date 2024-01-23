@@ -1,11 +1,7 @@
 One of you should now clone the repository to their local machine. Add a new text file with some lines of text.
 
-hanges and leave a meaningful commit message.
+Create a commit to save your changes and leave a meaningful commit message.
 
-:)
-
-Push the commit to the shared  on GitHub.
+Push the commit to the shared repository on GitHub.
 
 new by Betül.
-
-Markus wuzz hear
