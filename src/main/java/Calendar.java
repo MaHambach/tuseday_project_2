@@ -31,13 +31,13 @@ public class Calendar {
     }
 
     public static int daysInMonth(String monthName){
-        if(monthName == "February")
+        if(monthName.equals("February"))
             return 29;
 
-        if (monthName == "April"
-        || monthName == "June"
-        || monthName == "September"
-        || monthName == "November"
+        if (monthName.equals("April")
+        || monthName.equals("June")
+        || monthName.equals("September")
+        || monthName.equals("November")
         )
             return 30;
 
