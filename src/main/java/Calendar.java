@@ -1,34 +1,38 @@
 public class Calendar {
 
     public static void main(String [] args){
-        printCalendarForMonth("January");
-        printCalendarForMonth("February");
-        printCalendarForMonth("March");
-        printCalendarForMonth("April");
-        printCalendarForMonth("May");
-        printCalendarForMonth("June");
-        printCalendarForMonth("July");
-        printCalendarForMonth("August");
-        printCalendarForMonth("September");
-        printCalendarForMonth("October");
-        printCalendarForMonth("November");
-        printCalendarForMonth("December");
+        int[] offsetDays = {0, 3, 4, 0, 2, 5, 0, 3, 6, 1, 4, 6};
+        String[] monthNames = {
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December"
+        };
 
-
+        for (int i = 0; i < 12; i++){
+            printCalendarForMonth(monthNames[i], offsetDays[i]);
+        }
     }
 
-    public static void printCalendarForMonth(String monthName){
+    public static void printCalendarForMonth(String monthName, int offset){
         System.out.println(monthName);
         System.out.println("Mo Tu We Th Fr Sa Su");
-        printNumbers(daysInMonth(monthName), 2);
-
+        printNumbers(daysInMonth(monthName), offset);
 
         System.out.println("\n");
     }
 
     public static int daysInMonth(String monthName){
         if(monthName == "February")
-            return 28;
+            return 29;
 
         if (monthName == "April"
         || monthName == "June"
