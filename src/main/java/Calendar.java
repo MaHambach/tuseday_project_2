@@ -17,5 +17,6 @@ public class Calendar {
 
     public static void printCalendarForMonth(String monthName){
         System.out.println(monthName);
+        // weitere funktionen hier einfügen?
     }
 }
