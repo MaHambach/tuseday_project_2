@@ -18,10 +18,23 @@ public class Calendar {
     public static void printCalendarForMonth(String monthName){
         System.out.println(monthName);
         System.out.println("Mo Tu We Th Fr Sa Su");
-        printNumbers(31);
+        printNumbers(daysInMonth(monthName));
 
-        System.out.println();
-        // weitere funktionen hier einfügen?
+        System.out.println("\n");
+    }
+
+    public static int daysInMonth(String monthName){
+        if(monthName == "February")
+            return 28;
+
+        if (monthName == "April"
+        || monthName == "June"
+        || monthName == "September"
+        || monthName == "November"
+        )
+            return 30;
+
+        return 31;
     }
 
     public static void printNumbers(int numberOfDays){
