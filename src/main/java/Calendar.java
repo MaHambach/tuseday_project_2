@@ -1,17 +1,21 @@
 public class Calendar {
 
     public static void main(String [] args){
-        System.out.println("January");
-        System.out.println("February");
-        System.out.println("March");
-        System.out.println("April");
-        System.out.println("May");
-        System.out.println("June");
-        System.out.println("July");
-        System.out.println("August");
-        System.out.println("September");
-        System.out.println("October");
-        System.out.println("November");
-        System.out.println("December");
+        printCalendarForMonth("January");
+        printCalendarForMonth("February");
+        printCalendarForMonth("March");
+        printCalendarForMonth("April");
+        printCalendarForMonth("May");
+        printCalendarForMonth("June");
+        printCalendarForMonth("July");
+        printCalendarForMonth("August");
+        printCalendarForMonth("September");
+        printCalendarForMonth("October");
+        printCalendarForMonth("November");
+        printCalendarForMonth("December");
+    }
+
+    public static void printCalendarForMonth(String monthName){
+        System.out.println(monthName);
     }
 }
