@@ -4,4 +4,8 @@ public class Main {
         String name = "Hello World!" ;
         System.out.println(name);
     }
+
+    public static void usefulMethod(){
+        System.out.println("hier wurde eine völlig nützliche Methode aufgerufen");
+    }
 }
