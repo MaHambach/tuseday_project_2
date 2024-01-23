@@ -13,12 +13,15 @@ public class Calendar {
         printCalendarForMonth("October");
         printCalendarForMonth("November");
         printCalendarForMonth("December");
+
+
     }
 
     public static void printCalendarForMonth(String monthName){
         System.out.println(monthName);
         System.out.println("Mo Tu We Th Fr Sa Su");
-        printNumbers(daysInMonth(monthName));
+        printNumbers(daysInMonth(monthName), 2);
+
 
         System.out.println("\n");
     }
@@ -37,10 +40,11 @@ public class Calendar {
         return 31;
     }
 
-    public static void printNumbers(int numberOfDays){
+    public static void printNumbers(int numberOfDays, int offsetDays){
+        for(int i =0; i<offsetDays; i++) System.out.print("   ");
         for(int i = 1; i<numberOfDays+1; i++){
             System.out.format("%2d ", i);
-            if(i % 7==0 ) System.out.println();
+            if((i+offsetDays) % 7==0 ) System.out.println();
         }
     }
 }
