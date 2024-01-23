@@ -19,6 +19,8 @@ public class Calendar {
         System.out.println(monthName);
         System.out.println("Mo Tu We Th Fr Sa Su");
         printNumbers(31);
+
+        System.out.println();
         // weitere funktionen hier einfügen?
     }
 
